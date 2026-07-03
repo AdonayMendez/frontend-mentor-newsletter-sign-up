@@ -8,19 +8,29 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <form id="form">
-    <label for="fname">First name?</label>
-    <input type="text" name="fname" id="fname" /> <br>
-    <label for="lname">Last name?</label>
-    <input type="text" name="lname" id="lname"/> <br>
-    <label for="email">Email?</label>
-    <input type="text" name="email" id="email"/> <br>
-    <input type="submit">
-  </form>
 
 
 
-
+  <body>
+    <main class="newsletter-container">
+      <div class="newsletter__img">
+        <img src="" alt="">
+      </div>
+      <div class="newsletter__body">
+        <h1 class="newsletter__title">Stay updated!</h1>
+        <p class="newsletter__text">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="newsletter__list">
+          <li class="newsletter__list-item">Product discovery and building what matters</li>
+          <li class="newsletter__list-item">Measuring to ensure updates are a success</li>
+          <li class="newsletter__list-item">And much more!</li>
+        </ul>
+        <form class="newsletter__form">
+          <label for="email">Email</label> <br>
+          <input type="email" id="email" class="newsletter__input" placeholder="email@company.com" required><br>
+          <input type="submit" class="newsletter__submit"></input>
+        </form>
+      </div>
+    </main>
   <script src="script.js"></script>
  </body>
 </html>
