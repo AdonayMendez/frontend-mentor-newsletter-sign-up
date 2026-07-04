@@ -2,6 +2,7 @@ const form = document.getElementById("form");
 const successMsgPopup = document.getElementById("successMsgPopup");
 const submit = document.getElementById("submit");
 const inputField = document.getElementById("email"); 
+const conformationMsg = document.getElementById("conformationMsg");
 
 
 function handleSubmit(e){
@@ -13,6 +14,11 @@ function handleSubmit(e){
   console.log(data);
 
   showSuccessScreen();
+
+  conformationMsg.innerHTML = `
+  A confirmation email has been sent to <span>${emailField.value}</span>.
+  Please open it and click the button inside to confirm your subscription.
+  `;
 }
 
 function showSuccessScreen(){
