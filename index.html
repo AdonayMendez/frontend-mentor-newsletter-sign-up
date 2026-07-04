@@ -14,7 +14,11 @@
   <body>
     <main class="newsletter-container">
       <div class="newsletter__img">
-        <img src="" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+          <source media="(min-width: 500px)" srcset="assets/images/illustration-sign-up-tablet.svg">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt=" abstract illustration for newsletter sign up">
+        </picture>
       </div>
       <div class="newsletter__body">
         <h1 class="newsletter__title">Stay updated!</h1>
@@ -25,7 +29,7 @@
           <li class="newsletter__list-item">And much more!</li>
         </ul>
         <form class="newsletter__form">
-          <label for="email">Email</label> <br>
+          <label for="email"><p>Email address</p></label>
           <input type="email" id="email" class="newsletter__input" placeholder="email@company.com" required><br>
           <input type="submit" class="newsletter__submit"></input>
         </form>
