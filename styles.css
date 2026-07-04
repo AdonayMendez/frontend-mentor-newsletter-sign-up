@@ -39,6 +39,7 @@ body{
 }
 
 .newsletter-container{
+  position: relative; 
   height: 100%; 
   display: flex;
   flex-direction: column;
@@ -59,12 +60,8 @@ body{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
-  
+ 
 }
-
-
-
-
 
 .newsletter__body{
   /* background-color: green;  */
@@ -99,4 +96,17 @@ body{
 
 .newsletter__submit{
   width: 100%;
+  z-index: 1000;
+}
+
+.success-message__popup{
+  position: absolute; 
+  display: none;
+  width: 100%; 
+  height: 100%; 
+  background-color: var(--white); 
+}
+
+.success-message__popup.show{
+  display: block;
 }
