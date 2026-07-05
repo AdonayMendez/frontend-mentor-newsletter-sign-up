@@ -3,6 +3,11 @@ const successMsgPopup = document.getElementById("successMsgPopup");
 const submit = document.getElementById("submit");
 const inputField = document.getElementById("email"); 
 const conformationMsg = document.getElementById("conformationMsg");
+const newsletterContainer = document.getElementById("newsletterContainer");
+const successMessagePopupContainer = document.getElementById("successMessagePopupContainer");
+const dismissBtn = document.getElementById("dismissBtn");
+
+
 
 
 function handleSubmit(e){
@@ -22,13 +27,21 @@ function handleSubmit(e){
 }
 
 function showSuccessScreen(){
-  const isShown = successMsgPopup.classList.toggle("show"); 
+  successMessagePopupContainer.classList.toggle("show");
+  successMsgPopup.classList.add("show"); 
+  // submit.textContent = isShown ? "Dismiss Message" : "Submit";
+  // newsletterContainer.classList.toggle("hide");
+}
 
-  submit.textContent = isShown ? "Dismiss Message" : "Submit";
+function hideSuccessScreen(){
+  successMessagePopupContainer.classList.toggle("show");
+  successMsgPopup.classList.remove("show"); 
 }
 
 form.addEventListener("submit", (e) => {
   handleSubmit(e);
 });
+
+dismissBtn.addEventListener("click", hideSuccessScreen); 
 
 

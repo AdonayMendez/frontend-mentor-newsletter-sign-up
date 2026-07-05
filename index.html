@@ -11,7 +11,7 @@
 </head>
 
   <body>
-    <main class="newsletter-container">
+    <main class="newsletter-container" id="newsletterContainer">
       <div class="newsletter__img">
         <picture>
           <source media="(min-width: 1200px)" srcset="assets/images/illustration-sign-up-desktop.svg">
@@ -35,12 +35,15 @@
       </div>
     </main>
     
+      <div class="success-message__popup__container" id="successMessagePopupContainer">
       <div class="success-message__popup" id="successMsgPopup">
         <div>
           <img src="assets/images/icon-list.svg" alt="Check Logo">
         </div>
         <h1>Thanks for Subscribing</h1>
         <p id="conformationMsg"></p>
+        <button type="submit" id="dismissBtn">Dismiss Message</button>
+      </div>
       </div>
   <script src="script.js"></script>
  </body>
