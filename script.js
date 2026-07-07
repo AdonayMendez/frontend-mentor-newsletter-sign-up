@@ -15,6 +15,9 @@ function handleSubmit(e){
   
   const data = {};
   const emailField = document.getElementById("email");
+
+  // Adds a property with the name given in the name attribute in the input
+  // Sets the property value equal to what the user entered 
   data[emailField.name] = emailField.value;
   console.log(data);
 
@@ -22,7 +25,7 @@ function handleSubmit(e){
 
   conformationMsg.innerHTML = `
   A confirmation email has been sent to <span>${emailField.value}</span>.
-  Please open it and click the button inside to confirm your subscription.
+  Please open it and click the button inside to confirm your subscription
   `;
 }
 
