@@ -51,8 +51,7 @@ h1, p{
   position: relative; 
   height: 100%; 
   display: grid; 
-  grid-template-rows: 17.5rem auto;
-
+  grid-template-rows: 17.5rem 1fr;
 }
 
 .newsletter__img{
@@ -80,7 +79,7 @@ h1, p{
 
   display: grid; 
   grid-template-rows: repeat(4, auto);
-  gap: 1rem;
+  gap: 2rem;
 
   h1{
     font-size: clamp(2.5rem, 2.18rem + 1.35vw, 3.4rem);
@@ -92,18 +91,23 @@ h1, p{
 
 .newsletter__list{
   list-style: none;
-  /* padding: 0rem 1rem; */
   display: flex;
   flex-direction: column; 
-  gap: .5rem;
+  gap: 1rem;
 
   li{
     background-image: url('assets/images/icon-list.svg');
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 1rem 1rem;
-    padding-left: 1.4rem;
+    background-position: 0.2rem center;
+    background-size: 1.2rem 1.2rem;
+    padding-left: 2.5rem;
+    line-height: 1.5;
   }
+
+  /* li:last-child{
+    line-height: 1.3;
+    background-position: left center;
+  } */
 }
 
 
@@ -126,7 +130,6 @@ h1, p{
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  margin-bottom: .5rem; 
 }
 
 .error-message{
@@ -143,9 +146,13 @@ h1, p{
 .newsletter__input{
   margin-top: .4rem;
   width: 100%;
-  padding: .8rem;
+  padding: .8rem 1.5rem;
   border: 1px solid var(--grey);
   border-radius: .5rem;
+}
+
+.newsletter__input::placeholder{
+  color: var(--grey);
 }
 
 .newsletter__input.error{
@@ -251,6 +258,7 @@ h1, p{
     max-width: 55rem;
     grid-template-rows: 33rem; 
     grid-template-columns: 1.3fr 1fr; 
+    border-radius: 1.5rem;
   }
 
   .newsletter__img{
@@ -275,6 +283,17 @@ h1, p{
       margin: auto 0;
     }
   }
+
+  .newsletter__list{
+  li{
+    background-image: url('assets/images/icon-list.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.3rem 1.3rem;
+    padding-left: 2.5rem;
+    /* line-height: 1.5; */
+  }
+}
   /*! Success Popup */
 
   .newsletter-container.hide{
