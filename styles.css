@@ -34,13 +34,16 @@
 
 body{
   background-color: var(--white);
-  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
 span{
   color: var(--blue800);
   font-weight: 700;
+}
+
+button{
+  border: none;
 }
 
 h1, p{
@@ -74,7 +77,7 @@ h1, p{
 
 .newsletter__body{
   /* background-color: green;  */
-  padding: 2rem 1rem;
+  padding: 2rem 1rem .8rem 1rem;
 
 
   display: grid; 
@@ -170,11 +173,20 @@ h1, p{
   padding: 1rem 0rem;
   background-color: var(--blue800);
   border-radius: .5rem;
+  border: none;
+
     
   p{
     color: var(--white);
     font-weight: 700;
   }
+}
+
+.newsletter__submit:hover{
+  background-image: linear-gradient(to right, rgba(255, 84, 117), rgba(255, 103, 62));
+  box-shadow: 0 10px 20px 10px rgba(255, 84, 118, 0.347);
+  border: none;
+
 }
 
 .success-message__popup__container{
@@ -250,6 +262,7 @@ h1, p{
     display: flex;
     justify-content: center; 
     align-items: center; 
+    min-height: 100vh;
   }
   
   .newsletter-container{
