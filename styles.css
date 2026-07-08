@@ -121,6 +121,25 @@ h1, p{
     }
   }
 
+
+.input-header{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: .5rem; 
+}
+
+.error-message{
+  color: var(--red);
+  font-size: .85rem;
+  font-weight: 700; 
+  display: none;
+}
+
+.error-message.show{
+  display: block;
+}
+
 .newsletter__input{
   margin-top: .4rem;
   width: 100%;
@@ -128,6 +147,16 @@ h1, p{
   border: 1px solid var(--grey);
   border-radius: .5rem;
 }
+
+.newsletter__input.error{
+  border: 1px solid var(--red);
+  background: hsla(4, 100%, 67%, 0.27);
+}
+
+.newsletter__input.error::placeholder{
+  color: var(--red);
+}
+
 
 .newsletter__submit{
   width: 100%;

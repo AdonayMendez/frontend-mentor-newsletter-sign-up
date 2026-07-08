@@ -27,8 +27,11 @@
           <li class="newsletter__list-item"><p>easuring to ensure updates are a success</p></li>
           <li class="newsletter__list-item"><p>And much more!</p></li>
         </ul>
-        <form class="newsletter__form" id="form">
+        <form class="newsletter__form" id="form" novalidate>
+          <div class="input-header">
           <label for="email"><p>Email address</p></label>
+          <span class="error-message">Valid email required</span>
+          </div>
           <input type="email" id="email" name="email" class="newsletter__input" placeholder="email@company.com" required><br>
           <button type="submit" class="newsletter__submit" id="submit"><p>Subscribe to monthly newsletter</p>
           </button>
