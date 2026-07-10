@@ -9,7 +9,6 @@ const errorMessage = document.querySelector(".error-message");
 
 
 
-
 function handleSubmit(e){
   e.preventDefault();
 

@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-![Design preview for the Newsletter sign-up form with success message coding challenge](./preview.jpg)
+![Design preview for the Newsletter sign-up form with success message coding challenge](assets/preview.jpg)
 
 ## The challenge
 
@@ -18,6 +18,8 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### 
+### [Live Site](https://adonaymendez.github.io/frontend-mentor-newsletter-sign-up/)
 
-[Live Site](https://adonaymendez.github.io/frontend-mentor-newsletter-sign-up/)
+### ScreenShot
+
+![](assets/images/screenshot.png)
